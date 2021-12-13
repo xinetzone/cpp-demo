@@ -46,6 +46,7 @@ extensions = [
     "sphinxcontrib.mermaid",
     "sphinx_panels",
     "sphinx_inline_tabs",
+    'breathe'
     # "sphinx.ext.todo",
     # "sphinxcontrib.bibtex",
     # "sphinx_togglebutton",
@@ -280,3 +281,8 @@ execution_allow_errors = True
 jupyter_execute_notebooks = "cache"
 
 epub_show_urls = 'footnote'
+
+# breathe
+breathe_projects = { "cpp-examples": "xml/" }
+
+breathe_default_project = "cpp-examples"
