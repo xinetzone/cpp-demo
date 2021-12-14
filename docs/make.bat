@@ -25,6 +25,13 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
+if "%1" == "clean" (
+	for /d %%i in (%BUILDDIR%\*) do rmdir /q /s %%i
+	del /q /s %BUILDDIR%\*
+	goto end
+)
+
+doxygen
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 goto end
 
