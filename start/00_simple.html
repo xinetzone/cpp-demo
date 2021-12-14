@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>编写简单程序 &#8212; cpp-book 0.1 文档</title>
+    <title>C++ 初识 &#8212; cpp-book 0.1 文档</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -94,8 +94,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="Test" href="test.html" />
-    <link rel="prev" title="测试" href="first.html" /> 
+    <link rel="next" title="C++11 新特性及其学习方法（草稿）" href="draft.html" />
+    <link rel="prev" title="快速入门" href="index.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -175,14 +175,19 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     C++ 初识
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="draft.html">
+     C++11 新特性及其学习方法（草稿）
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="first.html">
      测试
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     编写简单程序
     </a>
    </li>
    <li class="toctree-l2">
@@ -269,7 +274,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/start/simple.md.txt"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/start/00_simple.md.txt"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -289,10 +294,10 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/simple.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/00_simple.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/simple.md"><button
+        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/00_simple.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -337,8 +342,19 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>编写简单程序<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="c">
+<h1>C++ 初识<a class="headerlink" href="#c" title="永久链接至标题">¶</a></h1>
+<p>现代 C++ 语言可以简单划分为：</p>
+<ul class="simple">
+<li><p><strong>低级语言</strong>：大部分继承自 C 语言</p></li>
+<li><p><strong>现代高级语言特性</strong>：允许自定义类型以及组织大规模程序和系统</p></li>
+<li><p><strong>标准库</strong>：利用高级特性来提供有用的数据结构和算法</p></li>
+</ul>
+<p>学习建议：</p>
+<ol class="simple">
+<li><p>刚开始学习的阶段：忽略那些继承自低级程序设计的细节，着重了解一些语言特性</p></li>
+<li><p>有了简单的认知后：理解规则背后的基本原理</p></li>
+</ol>
 <dl class="simple myst">
 <dt><code class="docutils literal notranslate"><span class="pre">类型</span></code></dt><dd><p>定义了数据元素的内容以及数据上的运算。</p>
 <p>程序所处理的数据都保存在变量中，而每个变量都有自己的类型。若一个变量 <code class="docutils literal notranslate"><span class="pre">v</span></code> 的变量类型为 <code class="docutils literal notranslate"><span class="pre">T</span></code>，通常说 “v 具有类型 T”，或等价的，“<code class="docutils literal notranslate"><span class="pre">v</span></code> 是一个 <code class="docutils literal notranslate"><span class="pre">T</span></code> 类型变量”。</p>
@@ -354,15 +370,15 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>程序文件通常被称为 <strong>源文件</strong>（source code），常用的后缀有 <code class="docutils literal notranslate"><span class="pre">.cc</span></code>、<code class="docutils literal notranslate"><span class="pre">.cxx</span></code>、<code class="docutils literal notranslate"><span class="pre">.cpp</span></code>、<code class="docutils literal notranslate"><span class="pre">.cp</span></code> 以及 <code class="docutils literal notranslate"><span class="pre">.C</span></code>。</p>
 <p>访问 <code class="docutils literal notranslate"><span class="pre">main</span></code> 的返回值的方法依赖于系统：</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="938ddc4b-a76f-47fd-b246-523ede2582c2" name="282f86cd-01a5-45ed-9447-6bce8e3c8e43" type="radio">
-</input><label class="tabbed-label" for="938ddc4b-a76f-47fd-b246-523ede2582c2">
+<input checked="checked" id="2eb8f31d-9dc2-46d3-ada8-829b173acbd4" name="ca971e56-81e1-4ae9-823a-ee05d26398cb" type="radio">
+</input><label class="tabbed-label" for="2eb8f31d-9dc2-46d3-ada8-829b173acbd4">
 Windows</label><div class="tabbed-content docutils">
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> %ERRORLEVEL%
 </pre></div>
 </div>
 </div>
-<input id="85995ce1-be02-446d-83c5-1112df1e4318" name="282f86cd-01a5-45ed-9447-6bce8e3c8e43" type="radio">
-</input><label class="tabbed-label" for="85995ce1-be02-446d-83c5-1112df1e4318">
+<input id="45a080fd-ed51-43ff-b07b-05751e4ea022" name="ca971e56-81e1-4ae9-823a-ee05d26398cb" type="radio">
+</input><label class="tabbed-label" for="45a080fd-ed51-43ff-b07b-05751e4ea022">
 Linux</label><div class="tabbed-content docutils">
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$?</span>
 </pre></div>
@@ -410,17 +426,17 @@ Linux</label><div class="tabbed-content docutils">
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="first.html" title="上一页 页">
+    <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">测试</p>
+            <p class="prev-next-title">快速入门</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="test.html" title="下一页 页">
+    <a class='right-next' id="next-link" href="draft.html" title="下一页 页">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">Test</p>
+        <p class="prev-next-title">C++11 新特性及其学习方法（草稿）</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

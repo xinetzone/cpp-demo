@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>快速入门 &#8212; cpp-book 0.1 documentation</title>
+    <title>C++11 新特性及其学习方法（草稿） &#8212; cpp-book 0.1 文档</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -79,6 +79,7 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
+    <script src="../_static/translations.js"></script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -91,12 +92,12 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="C++ 初识" href="00_simple.html" />
-    <link rel="prev" title="cpp-book" href="../index.html" /> 
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="测试" href="first.html" />
+    <link rel="prev" title="C++ 初识" href="00_simple.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="zh_CN">
     
 
     <!-- Google Analytics -->
@@ -155,7 +156,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       <img src="../_static/logo.jpg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">cpp-book 0.1 documentation</h1>
+      <h1 class="site-logo" id="site-title">cpp-book 0.1 文档</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -165,7 +166,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="bd-toc-item active">
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+  <a class="reference internal" href="index.html">
    快速入门
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -173,14 +174,14 @@ commentsRunWhenDOMLoaded(addUtterances);
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="00_simple.html">
      C++ 初识
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="draft.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      C++11 新特性及其学习方法（草稿）
     </a>
    </li>
@@ -203,7 +204,7 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../about/index.html">
-   About
+   关于
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -213,17 +214,17 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../CODE_OF_CONDUCT.html">
-     Covenant Code of Conduct
+     行为准则
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../CONTRIBUTING.html">
-     Contributing
+     贡献
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../SECURITY.html">
-     Security Policy
+     安全策略
     </a>
    </li>
   </ul>
@@ -273,7 +274,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/start/index.md.txt"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/start/draft.md.txt"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -293,10 +294,10 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/index.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/draft.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/index.md"><button
+        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/draft.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -323,19 +324,21 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>快速入门<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="00_simple.html">C++ 初识</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="00_simple.html#main"><code class="docutils literal notranslate"><span class="pre">main</span></code> 函数</a></li>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="c-11">
+<h1>C++11 新特性及其学习方法（草稿）<a class="headerlink" href="#c-11" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li><p>无序容器，弥补了 hash 容器的缺漏</p></li>
+<li><p>支持移动函数、移动赋值运算符，以减少特定场景下对象拷贝的性能开销</p></li>
+<li><p>标准库：右值引用（&amp;&amp;饰词）、默认和禁用构造函数</p></li>
+<li><p>引入 move 算法（对于数学上的代数的完备性提供补充），带来了存储效率的提升</p></li>
+<li><p>智能指针</p></li>
+<li><p>高效学习方法：带着 “编译器会如何做？” 的问题学习 C++</p></li>
+<li><p>C++ 编程范式：面向过程、基于对象、面向对象、泛型和函数式</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="draft.html">C++11 新特性及其学习方法（草稿）</a></li>
-<li class="toctree-l1"><a class="reference internal" href="first.html">测试</a></li>
-<li class="toctree-l1"><a class="reference internal" href="test.html">Test</a></li>
+<hr class="docutils" />
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>：用于类型推断</p></li>
 </ul>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -366,17 +369,17 @@ commentsRunWhenDOMLoaded(addUtterances);
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="00_simple.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">cpp-book</p>
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">C++ 初识</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="00_simple.html" title="next page">
+    <a class='right-next' id="next-link" href="first.html" title="下一页 页">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">C++ 初识</p>
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">测试</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

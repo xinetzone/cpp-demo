@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>编写简单程序 &#8212; cpp-book 0.1 documentation</title>
+    <title>C++11 新特性及其学习方法（草稿） &#8212; cpp-book 0.1 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -93,8 +93,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Test" href="test.html" />
-    <link rel="prev" title="测试" href="first.html" /> 
+    <link rel="next" title="测试" href="first.html" />
+    <link rel="prev" title="C++ 初识" href="00_simple.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -175,13 +175,18 @@ commentsRunWhenDOMLoaded(addUtterances);
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="first.html">
-     测试
+    <a class="reference internal" href="00_simple.html">
+     C++ 初识
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     编写简单程序
+     C++11 新特性及其学习方法（草稿）
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="first.html">
+     测试
     </a>
    </li>
    <li class="toctree-l2">
@@ -268,7 +273,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/start/simple.md.txt"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/start/draft.md.txt"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -288,10 +293,10 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/simple.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/draft.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/simple.md"><button
+        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/draft.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -311,24 +316,6 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> 导航
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#main">
-   <code class="docutils literal notranslate">
-    <span class="pre">
-     main
-    </span>
-   </code>
-   函数
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -336,49 +323,21 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>编写简单程序<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<dl class="simple myst">
-<dt><code class="docutils literal notranslate"><span class="pre">类型</span></code></dt><dd><p>定义了数据元素的内容以及数据上的运算。</p>
-<p>程序所处理的数据都保存在变量中，而每个变量都有自己的类型。若一个变量 <code class="docutils literal notranslate"><span class="pre">v</span></code> 的变量类型为 <code class="docutils literal notranslate"><span class="pre">T</span></code>，通常说 “v 具有类型 T”，或等价的，“<code class="docutils literal notranslate"><span class="pre">v</span></code> 是一个 <code class="docutils literal notranslate"><span class="pre">T</span></code> 类型变量”。</p>
-</dd>
-</dl>
-<div class="section" id="main">
-<h2><code class="docutils literal notranslate"><span class="pre">main</span></code> 函数<a class="headerlink" href="#main" title="Permalink to this headline">¶</a></h2>
-<p>大多数系统中，<code class="docutils literal notranslate"><span class="pre">main</span></code> 的返回值被用来指示状态。</p>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="c-11">
+<h1>C++11 新特性及其学习方法（草稿）<a class="headerlink" href="#c-11" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">0</span></code>：表示成功；</p></li>
-<li><p>非 0 的返回值的含义由系统定义，通常用于指出错误类型。</p></li>
+<li><p>无序容器，弥补了 hash 容器的缺漏</p></li>
+<li><p>支持移动函数、移动赋值运算符，以减少特定场景下对象拷贝的性能开销</p></li>
+<li><p>标准库：右值引用（&amp;&amp;饰词）、默认和禁用构造函数</p></li>
+<li><p>引入 move 算法（对于数学上的代数的完备性提供补充），带来了存储效率的提升</p></li>
+<li><p>智能指针</p></li>
+<li><p>高效学习方法：带着 “编译器会如何做？” 的问题学习 C++</p></li>
+<li><p>C++ 编程范式：面向过程、基于对象、面向对象、泛型和函数式</p></li>
 </ul>
-<p>程序文件通常被称为 <strong>源文件</strong>（source code），常用的后缀有 <code class="docutils literal notranslate"><span class="pre">.cc</span></code>、<code class="docutils literal notranslate"><span class="pre">.cxx</span></code>、<code class="docutils literal notranslate"><span class="pre">.cpp</span></code>、<code class="docutils literal notranslate"><span class="pre">.cp</span></code> 以及 <code class="docutils literal notranslate"><span class="pre">.C</span></code>。</p>
-<p>访问 <code class="docutils literal notranslate"><span class="pre">main</span></code> 的返回值的方法依赖于系统：</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="92467892-5a45-4240-ac37-f284925188cc" name="1b924843-1edd-4e30-bfd9-a1a5d4ca5464" type="radio">
-</input><label class="tabbed-label" for="92467892-5a45-4240-ac37-f284925188cc">
-Windows</label><div class="tabbed-content docutils">
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> %ERRORLEVEL%
-</pre></div>
-</div>
-</div>
-<input id="45009f59-c814-47a8-bca3-a0bc73e99e65" name="1b924843-1edd-4e30-bfd9-a1a5d4ca5464" type="radio">
-</input><label class="tabbed-label" for="45009f59-c814-47a8-bca3-a0bc73e99e65">
-Linux</label><div class="tabbed-content docutils">
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$?</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>编译源码的命令：</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>g++ prog1.cc
-</pre></div>
-</div>
-<p>其中 <code class="docutils literal notranslate"><span class="pre">prog1.cc</span></code> 是源码，<code class="docutils literal notranslate"><span class="pre">g++</span></code> 是 GCC 编译器的可执行命令。
-编译器通常包含一些选项，能对有问题的程序结构发出警告。</p>
+<hr class="docutils" />
 <ul class="simple">
-<li><p>GNU 使用 <code class="docutils literal notranslate"><span class="pre">-Wall</span></code></p></li>
-<li><p>Windows 使用 <code class="docutils literal notranslate"><span class="pre">/W4</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">auto</span></code>：用于类型推断</p></li>
 </ul>
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -409,17 +368,17 @@ Linux</label><div class="tabbed-content docutils">
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="first.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="00_simple.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">测试</p>
+            <p class="prev-next-title">C++ 初识</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="test.html" title="next page">
+    <a class='right-next' id="next-link" href="first.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Test</p>
+        <p class="prev-next-title">测试</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
