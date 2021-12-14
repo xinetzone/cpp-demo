@@ -6,6 +6,7 @@
 :hidden:
 
 start/index
+refs/index
 about/index
 ```
 
