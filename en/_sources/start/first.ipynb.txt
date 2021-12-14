@@ -9,7 +9,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -18,7 +18,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -33,7 +33,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 34,
+   "execution_count": 8,
    "metadata": {},
    "outputs": [
     {
@@ -41,9 +41,7 @@
      "output_type": "stream",
      "text": [
       "键入两个数字：\n",
-      "34\n",
-      "56\n",
-      "34与56的和是：90\n"
+      "112与34的和是：146\n"
      ]
     }
    ],
@@ -53,7 +51,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 38,
+   "execution_count": 9,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -70,7 +68,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 40,
+   "execution_count": 10,
    "metadata": {},
    "outputs": [
     {
@@ -87,7 +85,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 48,
+   "execution_count": 11,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -102,7 +100,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 49,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
@@ -119,7 +117,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 51,
+   "execution_count": 13,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -134,23 +132,48 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 52,
+   "execution_count": 14,
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "11 11 223 33 33\n",
-      "223 33 \n",
-      "q\n",
-      "求和：567\n"
+      "求和：1438\n"
      ]
     }
    ],
    "source": [
     "main();"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "45"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int a = 45;\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "code",
@@ -164,13 +187,13 @@
   "kernelspec": {
    "display_name": "C++11",
    "language": "C++11",
-   "name": "xcpp11"
+   "name": "python3100jvsc74a57bd000edc830b0681031d502e33386e4eeda2812b45297ce8c940d13c1f09fed4785"
   },
   "language_info": {
    "codemirror_mode": "text/x-c++src",
    "file_extension": ".cpp",
    "mimetype": "text/x-c++src",
-   "name": "c++",
+   "name": "C++11",
    "version": "11"
   }
  },

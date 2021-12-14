@@ -42,4 +42,9 @@ int main(){
 
 main();
 
+int a = 45;
+a
+
+
+
 
