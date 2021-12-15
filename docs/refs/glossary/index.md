@@ -1,4 +1,4 @@
-# 快速入门
+# 术语表
 
 ```{toctree}
 :maxdepth: 2
