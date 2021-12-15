@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="zh_CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C++ 初识 &#8212; cpp-book 0.1 文档</title>
+    <title>C++ 初识(raw) &#8212; cpp-book 0.1 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -79,7 +79,6 @@ var addUtterances = () => {
 }
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
-    <script src="../_static/translations.js"></script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -92,12 +91,12 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="C++11 新特性及其学习方法（草稿）" href="draft.html" />
-    <link rel="prev" title="快速入门" href="index.html" /> 
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="测试" href="first.html" />
+    <link rel="prev" title="C++11 新特性及其学习方法（草稿）" href="draft.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="zh_CN">
+    <meta name="docsearch:language" content="en">
     
 
     <!-- Google Analytics -->
@@ -156,7 +155,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       <img src="../_static/logo.jpg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">cpp-book 0.1 文档</h1>
+      <h1 class="site-logo" id="site-title">cpp-book 0.1 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -175,14 +174,19 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     C++ 初识
+   <li class="toctree-l2">
+    <a class="reference internal" href="00_basic.html">
+     变量与基本类型
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="draft.html">
      C++11 新特性及其学习方法（草稿）
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     C++ 初识(raw)
     </a>
    </li>
    <li class="toctree-l2">
@@ -197,14 +201,9 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../refs/index.html">
-   资源
-  </a>
- </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../about/index.html">
-   关于
+  <a class="reference internal" href="../refs/index.html">
+   参考
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -212,19 +211,63 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../refs/glossary/index.html">
+     术语表
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/glossary/type.html">
+       类型
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../refs/awesome.html">
+     Awesome
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../refs/note.html">
+     笔记
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../about/index.html">
+   About
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../CODE_OF_CONDUCT.html">
-     行为准则
+     Covenant Code of Conduct
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../CONTRIBUTING.html">
-     贡献
+     Contributing
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../SECURITY.html">
-     安全策略
+     Security Policy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CHANGELOG.html">
+     变更日志
     </a>
    </li>
   </ul>
@@ -274,7 +317,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/start/00_simple.md.txt"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/start/draft2.md.txt"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -294,10 +337,10 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/00_simple.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/draft2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/00_simple.md"><button
+        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/draft2.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -342,8 +385,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="c">
-<h1>C++ 初识<a class="headerlink" href="#c" title="永久链接至标题">¶</a></h1>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="c-raw">
+<h1>C++ 初识(raw)<a class="headerlink" href="#c-raw" title="Permalink to this headline">¶</a></h1>
 <p>现代 C++ 语言可以简单划分为：</p>
 <ul class="simple">
 <li><p><strong>低级语言</strong>：大部分继承自 C 语言</p></li>
@@ -361,7 +404,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </dd>
 </dl>
 <div class="section" id="main">
-<h2><code class="docutils literal notranslate"><span class="pre">main</span></code> 函数<a class="headerlink" href="#main" title="永久链接至标题">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">main</span></code> 函数<a class="headerlink" href="#main" title="Permalink to this headline">¶</a></h2>
 <p>大多数系统中，<code class="docutils literal notranslate"><span class="pre">main</span></code> 的返回值被用来指示状态。</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">0</span></code>：表示成功；</p></li>
@@ -370,15 +413,15 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>程序文件通常被称为 <strong>源文件</strong>（source code），常用的后缀有 <code class="docutils literal notranslate"><span class="pre">.cc</span></code>、<code class="docutils literal notranslate"><span class="pre">.cxx</span></code>、<code class="docutils literal notranslate"><span class="pre">.cpp</span></code>、<code class="docutils literal notranslate"><span class="pre">.cp</span></code> 以及 <code class="docutils literal notranslate"><span class="pre">.C</span></code>。</p>
 <p>访问 <code class="docutils literal notranslate"><span class="pre">main</span></code> 的返回值的方法依赖于系统：</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0bded5d1-cd38-4ccc-a7bc-3afa9cadadab" name="919e7956-3f94-4a77-bab3-01c19c9970dc" type="radio">
-</input><label class="tabbed-label" for="0bded5d1-cd38-4ccc-a7bc-3afa9cadadab">
+<input checked="checked" id="92563a20-4270-425b-93b5-141b7608b53c" name="cdd230d3-b9a6-411d-87a5-160cdb485d02" type="radio">
+</input><label class="tabbed-label" for="92563a20-4270-425b-93b5-141b7608b53c">
 Windows</label><div class="tabbed-content docutils">
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> %ERRORLEVEL%
 </pre></div>
 </div>
 </div>
-<input id="ab9964a7-30f1-4c6e-b36e-a9f5a8dfe0d7" name="919e7956-3f94-4a77-bab3-01c19c9970dc" type="radio">
-</input><label class="tabbed-label" for="ab9964a7-30f1-4c6e-b36e-a9f5a8dfe0d7">
+<input id="2a5447b3-7443-47a6-91ce-29d291f1484c" name="cdd230d3-b9a6-411d-87a5-160cdb485d02" type="radio">
+</input><label class="tabbed-label" for="2a5447b3-7443-47a6-91ce-29d291f1484c">
 Linux</label><div class="tabbed-content docutils">
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$?</span>
 </pre></div>
@@ -426,17 +469,17 @@ Linux</label><div class="tabbed-content docutils">
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="index.html" title="上一页 页">
+    <a class='left-prev' id="prev-link" href="draft.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
-            <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">快速入门</p>
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">C++11 新特性及其学习方法（草稿）</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="draft.html" title="下一页 页">
+    <a class='right-next' id="next-link" href="first.html" title="next page">
     <div class="prev-next-info">
-        <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">C++11 新特性及其学习方法（草稿）</p>
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">测试</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

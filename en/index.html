@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cpp-book &#8212; cpp-book 0.1 documentation</title>
+    <title>动手学习 C++ &#8212; cpp-book 0.1 documentation</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -174,13 +174,18 @@ commentsRunWhenDOMLoaded(addUtterances);
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="start/00_simple.html">
-     C++ 初识
+    <a class="reference internal" href="start/00_basic.html">
+     变量与基本类型
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="start/draft.html">
      C++11 新特性及其学习方法（草稿）
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/draft2.html">
+     C++ 初识(raw)
     </a>
    </li>
    <li class="toctree-l2">
@@ -195,17 +200,51 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="refs/index.html">
-   资源
+   参考
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="refs/glossary/index.html">
+     术语表
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="refs/glossary/type.html">
+       类型
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="refs/awesome.html">
+     Awesome
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="refs/note.html">
+     笔记
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="about/index.html">
    About
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -223,6 +262,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    <li class="toctree-l2">
     <a class="reference internal" href="SECURITY.html">
      Security Policy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     变更日志
     </a>
    </li>
   </ul>
@@ -322,7 +366,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
-   cpp-book
+   动手学习 C++
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
@@ -340,9 +384,14 @@ commentsRunWhenDOMLoaded(addUtterances);
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
-                 <div class="tex2jax_ignore mathjax_ignore section" id="cpp-book">
-<h1>cpp-book<a class="headerlink" href="#cpp-book" title="Permalink to this headline">¶</a></h1>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="c">
+<h1>动手学习 C++<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://github.com/xinetzone/cpp-book/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/xinetzone/cpp-book" /></a> <a class="reference external" href="https://github.com/xinetzone/cpp-book/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/xinetzone/cpp-book" /></a> <a class="reference external" href="https://github.com/xinetzone/cpp-book/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xinetzone/cpp-book" /></a> <a class="reference external" href="https://github.com/xinetzone/cpp-book/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/xinetzone/cpp-book" /></a> <img alt="repo size" src="https://img.shields.io/github/repo-size/xinetzone/cpp-book.svg" /> <a class="reference external" href="https://github.com/xinetzone/cpp-book/graphs/contributors"><img alt="contributors" src="https://img.shields.io/github/contributors/xinetzone/cpp-book.svg" /></a> <a class="reference external" href="https://github.com/xinetzone/cpp-book/watchers"><img alt="watcher" src="https://img.shields.io/github/watchers/xinetzone/cpp-book.svg" /></a></p>
+<p>在知乎同步录制视频教程：</p>
+<ul class="simple">
+<li><p>项目 <a class="reference external" href="https://www.zhihu.com/column/c_1453349826448105474">配置与启动</a></p></li>
+<li><p><a class="reference external" href="https://www.zhihu.com/column/c_1453503941032534016">动手学习 C++ 专栏</a></p></li>
+</ul>
 <div class="toctree-wrapper compound">
 </div>
 </div>

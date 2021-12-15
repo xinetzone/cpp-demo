@@ -95,7 +95,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="Test" href="test.html" />
-    <link rel="prev" title="C++11 新特性及其学习方法（草稿）" href="draft.html" /> 
+    <link rel="prev" title="C++ 初识(raw)" href="draft2.html" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -176,13 +176,18 @@ commentsRunWhenDOMLoaded(addUtterances);
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="00_simple.html">
-     C++ 初识
+    <a class="reference internal" href="00_basic.html">
+     变量与基本类型
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="draft.html">
      C++11 新特性及其学习方法（草稿）
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="draft2.html">
+     C++ 初识(raw)
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -197,17 +202,51 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../refs/index.html">
-   资源
+   参考
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../refs/glossary/index.html">
+     术语表
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../refs/glossary/type.html">
+       类型
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../refs/awesome.html">
+     Awesome
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../refs/note.html">
+     笔记
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../about/index.html">
    关于
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -225,6 +264,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    <li class="toctree-l2">
     <a class="reference internal" href="../SECURITY.html">
      安全策略
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../CHANGELOG.html">
+     变更日志
     </a>
    </li>
   </ul>
@@ -485,16 +529,16 @@ a
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "xcpp11"
         },
         kernelOptions: {
-            kernelName: "python3100jvsc74a57bd000edc830b0681031d502e33386e4eeda2812b45297ce8c940d13c1f09fed4785",
+            kernelName: "xcpp11",
             path: "./start"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3100jvsc74a57bd000edc830b0681031d502e33386e4eeda2812b45297ce8c940d13c1f09fed4785'</script>
+    <script>kernelName = 'xcpp11'</script>
 <div class="section">
    
 </div>
@@ -504,11 +548,11 @@ a
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="draft.html" title="上一页 页">
+    <a class='left-prev' id="prev-link" href="draft2.html" title="上一页 页">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">C++11 新特性及其学习方法（草稿）</p>
+            <p class="prev-next-title">C++ 初识(raw)</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="test.html" title="下一页 页">
