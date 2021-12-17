@@ -4,5 +4,7 @@
 
 在知乎同步录制视频教程：
 
-- 项目 [配置与启动](https://www.zhihu.com/column/c_1453349826448105474)
+- [windows11 下 wsl2 安装 anaconda3 - 知乎 (zhihu.com)](https://www.zhihu.com/zvideo/1454195439825928192)
+- [wsl2 配置 Jupyter C++ 内核（上）](https://www.zhihu.com/zvideo/1454195804856147969)
+- [wsl2 配置 Jupyter C++ 内核（下） - 知乎 (zhihu.com)](https://www.zhihu.com/zvideo/1454221952076009472)
 - [动手学习 C++ 专栏](https://www.zhihu.com/column/c_1453503941032534016)
