@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C++ 初识(raw) &#8212; cpp-book 0.1 documentation</title>
+    <title>C++ 初识(raw) &#8212; cpp-demo 0.1 documentation</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -65,7 +65,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/cpp-book");
+    script.setAttribute("repo", "xinetzone/cpp-demo");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -155,7 +155,7 @@ commentsRunWhenDOMLoaded(addUtterances);
       <img src="../_static/logo.jpg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">cpp-book 0.1 documentation</h1>
+      <h1 class="site-logo" id="site-title">cpp-demo 0.1 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -281,7 +281,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <div>
 版权所有 © 2021 <a href="https://xinetzone.github.io/">xinetzone</a></div>
 <div>由 <a href="https://ebp.jupyterbook.org/">EBP</a> 提供技术支持</div>
-<div>语言切换<a href="/cpp-book/">中</a>/<a href="/cpp-book/en">英</a></div>
+<div>语言切换<a href="/cpp-demo/">中</a>/<a href="/cpp-demo/en">英</a></div>
 
 </div>
 
@@ -333,14 +333,14 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/cpp-book"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/xinetzone/cpp-demo"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/cpp-book/issues/new?title=Issue%20on%20page%20%2Fstart/draft2.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/xinetzone/cpp-demo/issues/new?title=Issue%20on%20page%20%2Fstart/draft2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/xinetzone/cpp-book/edit/main/docs/start/draft2.md"><button
+        <a class="edit-button" href="https://github.com/xinetzone/cpp-demo/edit/main/docs/start/draft2.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -413,15 +413,15 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>程序文件通常被称为 <strong>源文件</strong>（source code），常用的后缀有 <code class="docutils literal notranslate"><span class="pre">.cc</span></code>、<code class="docutils literal notranslate"><span class="pre">.cxx</span></code>、<code class="docutils literal notranslate"><span class="pre">.cpp</span></code>、<code class="docutils literal notranslate"><span class="pre">.cp</span></code> 以及 <code class="docutils literal notranslate"><span class="pre">.C</span></code>。</p>
 <p>访问 <code class="docutils literal notranslate"><span class="pre">main</span></code> 的返回值的方法依赖于系统：</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="64103599-2c1b-4160-95c1-50f6fcfd83d3" name="5cedf1ef-ea86-43ae-9f91-df672ed78f0c" type="radio">
-</input><label class="tabbed-label" for="64103599-2c1b-4160-95c1-50f6fcfd83d3">
+<input checked="checked" id="04bbbac1-d25e-4b41-b53c-0700f0d79f72" name="67c1d723-f59b-472e-ba06-9fc0f9a3b9d7" type="radio">
+</input><label class="tabbed-label" for="04bbbac1-d25e-4b41-b53c-0700f0d79f72">
 Windows</label><div class="tabbed-content docutils">
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> %ERRORLEVEL%
 </pre></div>
 </div>
 </div>
-<input id="b8538bb9-bf70-4ab7-850e-2f5e6a7a7700" name="5cedf1ef-ea86-43ae-9f91-df672ed78f0c" type="radio">
-</input><label class="tabbed-label" for="b8538bb9-bf70-4ab7-850e-2f5e6a7a7700">
+<input id="49e870ce-15df-4bdb-bdc5-2adca122c96b" name="67c1d723-f59b-472e-ba06-9fc0f9a3b9d7" type="radio">
+</input><label class="tabbed-label" for="49e870ce-15df-4bdb-bdc5-2adca122c96b">
 Linux</label><div class="tabbed-content docutils">
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$?</span>
 </pre></div>
@@ -445,7 +445,7 @@ Linux</label><div class="tabbed-content docutils">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/cpp-book",
+            repo: "xinetzone/cpp-demo",
             ref: "main",
         },
         codeMirrorConfig: {

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
-  <id>https://xinetzone.github.io/cpp-book</id>
+  <id>https://xinetzone.github.io/cpp-demo</id>
   <title>Blog</title>
-  <updated>2021-12-18T08:11:29.939752+00:00</updated>
-  <link href="https://xinetzone.github.io/cpp-book"/>
-  <link href="https://xinetzone.github.io/cpp-book/zh_CN/posts/atom.xml" rel="self"/>
+  <updated>2021-12-18T08:22:31.025540+00:00</updated>
+  <link href="https://xinetzone.github.io/cpp-demo"/>
+  <link href="https://xinetzone.github.io/cpp-demo/zh_CN/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.21">ABlog</generator>
 </feed>
